@@ -1,0 +1,58 @@
+nav {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(58, 241, 110);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
+    margin-top: 5px;
+    /* justify-content: flex-end; */
+
+}
+
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    /*below I changed the color*/
+    color: black;
+    /*I added some padding*/
+    padding: 2vw;
+    /*also changed the font family but that's totally irrelevant*/
+    font-family: monospace;
+}
+
+a:hover {
+    background-color: #C6E9FF;
+}
+
+@media only screen and (max-width: 500px) {
+
+    /*shows elements in a column*/
+    ul {
+        flex-direction: column;
+    }
+
+    /* deletes margin on top or bottom of the a tag*/
+    li {
+        margin: 0;
+    }
+
+    /* makes sure that the a tag will take the entire screen*/
+    a {
+        display: block;
+    }
+}
