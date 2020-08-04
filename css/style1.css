@@ -1,0 +1,47 @@
+ li {
+    list-style-type: none;
+    margin: 0 2vw;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    padding: 2vw;
+    font-family: monospace;
+}
+
+nav {
+    width: 100vw;
+    height: 131px;
+    background-color: rgb(58, 241, 110);
+   
+}
+
+nav img {
+    height: 30px;
+    width: 30px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+body {
+    margin: 0;
+}
+
+footer ul {
+    display: flow-root;
+}
+
