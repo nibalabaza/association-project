@@ -12,8 +12,9 @@ body {
     padding: 10px 50px 50px;
 }
 
-.qui h1 {
+.qui h2 {
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 
@@ -25,7 +26,6 @@ p {
     margin: 0;
 }
 
-h1,
 h2 {
     text-align: center;
     padding-top: 15px;
@@ -56,13 +56,17 @@ button {
     height: 35px;
     background-color: #DECD35;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 article {
     margin: 20px 0;
 }
 
-a {
+section a {
     display: block;
     text-decoration: none;
     text-align: center;
