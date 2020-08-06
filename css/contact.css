@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* style du main */
+
+main {
+    background-color: #7BD76C;
+}
+
+
+/* style des champs du formulaire */
+
+input,
+label,
+select {
+    display: block;
+    width: 100%;
+}
+
+input,
+select {
+    height: 35px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* style du boutton */
+
+button {
+    display: block;
+    background-color: rgb(212, 209, 209);
+    height: 25px;
+}
+
+
+/* Responsive quand on passe sur ecran d'IPAD ou plus */
+
+@media screen and (min-width:768px) {
+    main {
+        width: 760px;
+        margin: auto;
+    }
+    body {
+        background-color: #7BD76C;
+    }
+}

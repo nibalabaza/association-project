@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,69 +13,93 @@
 
 <body>
     <header>
-      
-        
-      <nav>
-          <img src="img/logo_assos.png">
-         <ul>
-          <!-- <button>menu</button> -->
-          <h1>SOS FORETS</h1>
-          <li>
-            <a href="#accueil"> Accueil </a>
-          </li>
-          <li>
-            <a href="#nos actions"> Nos actions </a>
-          </li>
-          <li>
-            <a href="#notre actu"> Notre actu</a>
-          </li>
-          <li>
-            <a href="#contacts"> Contacts </a>
-          </li>
-        </ul>
-      </nav>
 
-      <!-- <img src = "img/forest.jpg" width= "100%"> -->
+
+        <nav>
+            <img src="img/logo_assos.png" width="90px" height="131px">
+            <h1>SOS FORETS</h1>
+            <ul>
+                <!-- <button>menu</button> -->
+
+                <li>
+                    <a href="#accueil"> Accueil </a>
+                </li>
+                <li>
+                    <a href="#nos actions"> Nos actions </a>
+                </li>
+                <li>
+                    <a href="#notre actu"> Notre actu</a>
+                </li>
+                <li>
+                    <a href="#contacts"> Contacts </a>
+                </li>
+            </ul>
+        </nav>
+
+        <img src="img/forest.jpg" width="100%">
     </header>
     <main>
-        <section>
+        <section class="qui">
             <h1>Qui sommes-nous ?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .Quod ab optio mollitia autem quisquam eum ducimus esse assumenda laboriosam amet aliquam, eius adipisci doloremque quidem tempore harum modi nesciunt dicta?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Quod ab optio mollitia autem quisquam eum ducimus esse assumenda.Lorem ipsum dolor sit amet consectetur adipisicing elit. laboriosam amet aliquam, eius adipisci doloremque quidem tempore
+                harum modi nesciunt dicta?</p>
         </section>
-        <section>
+        <section class="action">
             <h2>Nos actions</h2>
-            <article class="act1">
-                <img src="./img/actu1.jpg" alt="planter un arbre" height="130px" width="130px">
-                <div>
-                    <h3>Action 1:</h3>
-                    <p>Lorem ipsum sit dolor Quod ab optio mollitia autem </p>
-                    <button>En savoir plus >></button>
-                </div>
-            </article>
-            <article class="act1">
-                <img src="./img/actue2.jpg" alt="forêt vue du ciel" height="130px" width="130px">
-                <div>
-                    <h3>Action 2:</h3>
-                    <p>Lorem ipsum sit dolor Quod ab optio mollitia autem </p>
-                    <button>En savoir plus >></button>
-                </div>
-            </article>
+            <div class="action-wide">
+                <article class="act1">
+                    <div>
+                        <img src="./img/actu1.jpg" alt="planter un arbre" height="130px" width="130px">
+                    </div>
+                    <div>
+                        <h3>Action 1:</h3>
+                        <p>Lorem ipsum sit dolor Quod ab optio mollitia autem </p>
+                        <button><a href="">En savoir plus >></a></button>
+                    </div>
+                </article>
+                <article class="act1">
+                    <div>
+                        <img src="./img/actue2.jpg" alt="forêt vue du ciel" height="130px" width="130px">
+                    </div>
+                    <div>
+                        <h3>Action 2:</h3>
+                        <p>Lorem ipsum sit dolor Quod ab optio mollitia autem </p>
+                        <button><a href="">En savoir plus >></a></button>
+                    </div>
+                </article>
+            </div>
+            <a href="actions.html">Toutes nos actions >></a>
         </section>
-        <section></section>
+        <section class="actu">
+            <h2>Notre actualité</h2>
+            <div class="flex-wide">
+                <article>
+                    <img src="img/fire1.jpg" alt="incendie de forêt" height="130px" width="300px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nostrum, nulla ea perspiciatis perferendis aut modi nemo sit aspernatur eius cum sed magnam. Dolore, voluptates incidunt.</p>
+
+                </article>
+                <article>
+                    <img src="img/cut.jpg" alt="arbres coupés" height="130px" width="300px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nostrum, nulla ea perspiciatis perferendis aut modi nemo sit aspernatur eius cum sed magnam. Dolore, voluptates incidunt.</p>
+
+                </article>
+            </div>
+            <a href="actu.html">Toute l'actu >></a>
+        </section>
     </main>
     <footer>
-        
+
         <!-- <ul>
             <li><i class="fa fa-facebook-official" style="font-size:36px"></i></li>
            <li>  <i class="fa fa-instagram" style="font-size:36px"></i></li>
            <li><i class="fa fa-twitter" style="font-size:36px"></i></li>
           </ul> -->
 
-          <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-facebook-official"></i></span></li><br/>
-              <li><span class="fa-li"><i class="fa fa-instagram"></i></span></li><br/>
-              <li><span class="fa-li"><i class="fa fa-twitter"></i></span></li><br/>
-            </ul>
+        <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-facebook-official"></i></span></li><br/>
+            <li><span class="fa-li"><i class="fa fa-instagram"></i></span></li><br/>
+            <li><span class="fa-li"><i class="fa fa-twitter"></i></span></li><br/>
+        </ul>
     </footer>
 </body>
 
