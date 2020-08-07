@@ -1,6 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* La section qui sommes nous? */
+
+.qui {
+    background-color: #7BD76C;
+    padding: 10px 50px 50px;
+}
+
+.qui h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+/* styles des titre et paragraphe */
+
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+section {
+    padding: 0 10px;
+}
+
+
+/* la section actions */
+
+.action {
+    background-color: #A2B7D6;
+}
+
 .act1 {
     display: flex;
     justify-content: stretch;
+    width: calc(100%-20px);
 }
 
 .act1 h3 {
@@ -8,6 +53,65 @@
 }
 
 button {
-    height: 40px;
+    height: 35px;
     background-color: #DECD35;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+article {
+    margin: 20px 0;
+}
+
+section a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+}
+
+
+/* la section actualité */
+
+.actu {
+    display: flex;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    width: calc(100%-20px);
+}
+
+.actu a {
+    margin-top: 35px;
+}
+
+.actu img {
+    display: block;
+    margin: auto;
+}
+
+article div {
+    margin-left: 10px;
+}
+
+
+/* Responsive quand on passe sur un ecran d'IPAD ou plus */
+
+@media screen and (min-width:768px) {
+    .flex-wide {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-wide p {
+        margin: 10px;
+    }
+    .qui {
+        padding: 10px 100px 50px;
+    }
+    .action-wide {
+        display: flex;
+        justify-content: space-between;
+    }
 }
