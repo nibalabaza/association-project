@@ -18,8 +18,8 @@
  }
  
  nav img {
-     height: 30px;
-     width: 30px;
+     height: 100%;
+     width: 100px;
  }
  
  h1 {
@@ -30,7 +30,7 @@
  ul {
      margin: 0;
      padding: 0;
-     display: flex;
+     display: none;
      justify-content: flex-end;
      align-items: flex-end;
  }
