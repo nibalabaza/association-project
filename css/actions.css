@@ -1,7 +1,6 @@
 * {
     padding: Opx;
     margin: 0px;
-
 }
 
 nav img {
@@ -14,7 +13,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     /*?*/
-    background-color:    rgb(182, 250, 173);
+    background-color: rgb(182, 250, 173);
     ;
 }
 
@@ -49,7 +48,6 @@ nav {
 
 @media screen and (max-width:1024px) {
     .nav-links {
-
         width: 70%;
         /*for the space between them when the screen is a tab*/
     }
@@ -60,7 +58,6 @@ nav {
         overflow-x: hidden;
         /*to remove the menu totaly (if there is a scroll, it will display the menu in the end of the scroll then this feature is to remove it totally ) we will display it with the click function later*/
     }
-
     .nav-links {
         position: absolute;
         right: 0px;
@@ -69,7 +66,7 @@ nav {
         /*92vh it gives full screen in height*/
         top: 8vh;
         /*it will be right under the nav bar*/
-        background-color:  rgb(182, 250, 173);
+        background-color: rgb(182, 250, 173);
         ;
         display: flex;
         flex-direction: column;
@@ -80,35 +77,26 @@ nav {
         /*to remove the menu and then we will apply sth to com when click*/
         transition: transform 0.5s ease-in;
     }
-
     .nav-links li {
         opacity: 0;
         /* to make it hidden -the origin state of the links is hidden*/
     }
-
     .lines {
         display: block;
     }
-
-
 }
-
-
 
 .nav-active {
     transform: translateX(0%);
     /*this means back to 0% (the navigation will return the translation from 100% to 0%) to show the lines -the menu*/
 }
 
-
 @keyframes navLinkFade {
-
     /*for the  menu to slide nicely*/
     from {
         opacity: 0;
         transform: translateX(50px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0px);
@@ -116,7 +104,7 @@ nav {
 }
 
 body {
-    background:  #7BD76C;
+    background: #7BD76C;
     margin: 0px;
 }
 
@@ -126,13 +114,11 @@ h4 {
 
 h2 {
     text-align: center;
-
 }
 
 section {
     margin-left: 30px;
     margin-top: 10px;
-
 }
 
 .act {
@@ -145,7 +131,6 @@ section {
     float: left;
 }
 
-
 .content p {
     margin-left: 15px;
     display: block;
@@ -156,6 +141,8 @@ nav ul li:hover {
     background-color: rgba(150, 244, 177, 0.61);
     transition: 0.9s;
 }
+
+
 /* 
 .text h3{
     color: rgb(252, 234, 234);
@@ -168,8 +155,6 @@ footer {
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
-   
-
 }
 
 footer ul {
@@ -188,8 +173,6 @@ footer a {
 }
 
 @media screen and (max-width:768px) {
-
-
     footer {
         display: flex;
         flex-wrap: wrap;
@@ -200,25 +183,19 @@ footer a {
         padding: 20px;
         padding-top: 0px;
         height: 500px;
-
     }
-
     footer div {
-        width: 100%;
+        height: 150px;
         font-size: 20px;
     }
-
     .fa-ul {
         height: 1rem;
         font-size: 1.50em;
     }
-
     input {
-       width: 30%;
-       height: 30px;
-       
+        width: 30%;
+        height: 30px;
     }
-
 }
 
 input {
@@ -230,10 +207,10 @@ input {
 
 .blink_me {
     animation: blinker 1s linear infinite;
-  }
-  
-  @keyframes blinker {
+}
+
+@keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
