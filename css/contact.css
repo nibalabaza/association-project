@@ -9,6 +9,12 @@ body {
 
 main {
     background-color: #7BD76C;
+    padding-top: 25px;
+}
+
+legend {
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 
@@ -29,6 +35,7 @@ select {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    margin-bottom: 25px;
 }
 
 textarea {
@@ -57,6 +64,7 @@ button {
         width: 760px;
         margin: auto;
     }
+
     body {
         background-color: #7BD76C;
     }
@@ -81,7 +89,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     /*?*/
-    background-color:    rgb(182, 250, 173);
+    background-color: rgb(182, 250, 173);
     ;
 }
 
@@ -136,7 +144,7 @@ nav {
         /*92vh it gives full screen in height*/
         top: 8vh;
         /*it will be right under the nav bar*/
-        background-color:  rgb(182, 250, 173);
+        background-color: rgb(182, 250, 173);
         ;
         display: flex;
         flex-direction: column;
@@ -218,12 +226,11 @@ nav ul li:hover {
 
 footer {
     color: black;
-    background: #7BD76C;
-    margin-top: 20px;
+    background: rgb(182, 250, 173);
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
-   
+
 
 }
 
@@ -248,23 +255,30 @@ footer a {
     footer {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
-        margin-left: 30px;
+        padding: 20px;
+        padding-top: 0px;
+        height: 500px;
 
     }
 
     footer div {
-        width: 100%;
-        flex-direction: column;
         font-size: 20px;
+        height: 150px;
+
     }
+
+
 
     .fa-ul {
         height: 1rem;
         font-size: 1.50em;
     }
 
- 
+
 
 }
 

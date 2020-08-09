@@ -28,7 +28,7 @@ p {
 
 h2 {
     text-align: center;
-    padding-top: 15px;
+   
 }
 
 section {
@@ -288,7 +288,7 @@ nav ul li:hover {
 footer {
     color: black;
     background: #7BD76C;
-    margin-top: 20px;
+   
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
