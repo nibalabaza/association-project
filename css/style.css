@@ -115,3 +115,245 @@ article div {
         justify-content: space-between;
     }
 }
+
+/*NAV*/
+
+* {
+    padding: Opx;
+    margin: 0px;
+
+}
+
+nav img {
+    margin: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    /*?*/
+    background-color:    rgb(182, 250, 173);
+    ;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 20PX;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.lines {
+    display: none;
+}
+
+.lines div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    /* transition : all 0.3s ease; */
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+
+        width: 70%;
+        /*for the space between them when the screen is a tab*/
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+        /*to remove the menu totaly (if there is a scrolle for ex ,it will display the menu in the end of the scrolle then this feature is to remove it totally ) we will display it with the click function*/
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        /*rest in the right*/
+        height: 40vh;
+        /*92vh it gives full screen in height*/
+        top: 8vh;
+        /*it will be right under the nav bar*/
+        background-color:  rgb(182, 250, 173);
+        ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        /*the width of the menu */
+        transform: translateX(100%);
+        /*to remove the menu and then we will apply sth to com when click*/
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+        /* to make it hidden -the origin state of the links is hidden*/
+    }
+
+    .lines {
+        display: block;
+    }
+
+
+}
+
+
+
+.nav-active {
+    transform: translateX(0%);
+    /*this means back to 0% (the navigation will return the translation from 100% to 0%) to show the lines -the menu*/
+}
+
+
+@keyframes navLinkFade {
+
+    /*for the  menu to slide nicely*/
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* body {
+    
+    margin: 0px;
+} */
+
+h4 {
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+/* section {
+    margin-left: 30px;
+    margin-top: 10px;
+
+} */
+
+/*SECTION*/
+.act {
+    text-align: center;
+    margin: 10px;
+}
+
+.content img {
+    margin-right: 15px;
+    float: left;
+}
+
+
+.content p {
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
+
+nav ul li:hover {
+    background-color: rgba(150, 244, 177, 0.61);
+    transition: 0.9s;
+}
+/* 
+.text h3{
+    color: rgb(252, 234, 234);
+    text-align: center;
+} */
+
+/*FOOTER*/
+
+footer {
+    color: black;
+    background: #7BD76C;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer a {
+    color: black;
+}
+
+.fa-ul {
+    height: 1rem;
+    font-size: 1.20em;
+}
+
+@media screen and (max-width:768px) {
+
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 30px;
+
+    }
+
+    footer div {
+        width: 100%;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .fa-ul {
+        height: 1rem;
+        font-size: 1.50em;
+    }
+
+    input {
+       width: 30%;
+       height: 30px;
+       
+    }
+
+}
+
+input {
+    height: 60px;
+    background-color: rgb(255, 247, 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
